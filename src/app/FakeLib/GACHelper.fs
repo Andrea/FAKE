@@ -1,4 +1,3 @@
-﻿/// This module contains helper function for the GAC
 module Fake.GACHelper
 
 open System
@@ -7,7 +6,6 @@ open System
 let gacutilToolPath = !! (sdkBasePath + "/**/gacutil.exe")  
                              |> getNewestTool
 
-/// GAC parameters
 type GACParams = 
     { /// (Required) Path to the gacutil
       ToolPath : string
